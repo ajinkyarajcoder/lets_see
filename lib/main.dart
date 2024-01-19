@@ -5,11 +5,18 @@ void main() {
   runApp(const MyApp());
 }
 
+
+
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
+  /// Builds the root MaterialApp widget for the application.
+  /// 
+  /// Configures the app title, theme, and home page route. Allows
+  /// hot reloading to test theme and code changes.
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
